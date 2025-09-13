@@ -1,3 +1,5 @@
+# o si usas VS Code
+code script_jwt.py
 
 #!/usr/bin/env python3
 """
@@ -15,7 +17,7 @@ import jwt
 from jwt import ExpiredSignatureError, InvalidSignatureError, InvalidTokenError
 from datetime import datetime, timedelta
 
-# Datos del usuario (según lo solicitaste)
+# Datos 
 PAYLOAD_BASE = {
     "carnet": "1990-21-8618",
     "nombre": "Kevin Adolfo Tepaz Buc",
@@ -24,8 +26,8 @@ PAYLOAD_BASE = {
 }
 
 # Claves
-SECRET = "mi_clave_secreta_super_segura"     # clave correcta (manténla segura)
-WRONG_SECRET = "clave_incorrecta"            # clave equivocada para la prueba
+SECRET = "Password"    
+WRONG_SECRET = "clave_incorrecta"           
 
 ALGORITHM = "HS256"
 
